@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Fluency Education</title>
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>tailwind = { config: { theme: { extend: {
+  colors: { navy:'#0505B1', navydark:'#0A0A45', gold:'#ECB93A', paper:'#FAF9F4', ink:'#14142B', inksoft:'#55566B', line:'#E7E3D6' },
+  fontFamily: { display:['"Space Grotesk"','sans-serif'], body:['Inter','sans-serif'] }
+}}}}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-body bg-paper text-ink">
+<header class="border-b border-line">
+  <div class="max-w-4xl mx-auto px-5 py-6 flex items-center justify-between">
+    <a href="index.html"><img src="logo.png" alt="Fluency Education" class="h-9"></a>
+    <a href="index.html" class="text-sm font-semibold text-navy hover:underline">← Back to site</a>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 py-16">
+  <p class="text-xs font-semibold text-golddeep mb-3 tracking-wide">LEGAL</p>
+  <h1 class="font-display font-bold text-4xl text-navydark mb-3">Privacy Policy</h1>
+  <p class="text-sm text-inksoft mb-10">Last updated: [Add date]. This is a starting template — have it reviewed by a lawyer before publishing, especially regarding PIPEDA (Canada's federal privacy law) and BC's PIPA.</p>
+
+  <div class="space-y-8 text-inksoft leading-relaxed">
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Information we collect</h2>
+      <p>When you use our contact form, newsletter signup, or booking form, we collect your name, email address, phone number (if provided), and any message you send us. When you purchase a study guide, payment is processed by PayPal and we do not store your card details.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">How we use your information</h2>
+      <p>We use this information to respond to inquiries, schedule assessments and classes, deliver purchased products, and — only if you opt in — send occasional study tips and updates by email.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Third-party services</h2>
+      <p>We use FormSubmit to route contact-form messages to our inbox, PayPal to process payments, and may use Calendly for scheduling. Each service processes data under its own privacy policy.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Your rights</h2>
+      <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at joni@fluencyeducation.ca.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Contact</h2>
+      <p>Fluency Education, 111-7700 St Albans Rd, Richmond, BC V6Y 3Y4 · joni@fluencyeducation.ca · +1 (778) 896-4013</p>
+    </section>
+  </div>
+</main>
+<footer class="border-t border-line py-8 text-center text-xs text-inksoft">© <span id="year"></span> Fluency Education. All rights reserved.</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

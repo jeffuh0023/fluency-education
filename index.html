@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluency Education | CELPIP Coaching in Richmond, BC</title>
+<meta name="description" content="Personalized CELPIP coaching for Canadian immigrants. One-on-one and group classes, band-score assessments, and exam-ready practice with instructor Joni David.">
+
+<meta property="og:title" content="Fluency Education | CELPIP Coaching">
+<meta property="og:description" content="Proficiency that unlocks endless possibilities. Personalized CELPIP coaching in Richmond, BC.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://www.fluencyeducation.ca/">
+<link rel="icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<script>
+  tailwind = { config: { theme: { extend: {
+    colors: {
+      navy: '#0505B1', navydark:'#0A0A45', gold:'#ECB93A', golddeep:'#C8961E',
+      paper:'#FAF9F4', ink:'#14142B', inksoft:'#55566B', line:'#E7E3D6'
+    },
+    fontFamily: {
+      display: ['"Space Grotesk"','sans-serif'],
+      body: ['Inter','sans-serif'],
+      mono: ['"IBM Plex Mono"','monospace']
+    }
+  }}}}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Fluency Education",
+  "description": "CELPIP exam coaching for Canadian immigrants — one-on-one and group classes.",
+  "url": "https://www.fluencyeducation.ca",
+  "logo": "https://www.fluencyeducation.ca/logo.png",
+  "telephone": "+1-778-896-4013",
+  "email": "joni@fluencyeducation.ca",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "111-7700 St Albans Rd",
+    "addressLocality": "Richmond",
+    "addressRegion": "BC",
+    "postalCode": "V6Y 3Y4",
+    "addressCountry": "CA"
+  }
+}
+</script>
+
+<style>
+  :root{ scroll-behavior:smooth; }
+  body{ background:#FAF9F4; color:#14142B; }
+  .eyebrow{ font-family:'IBM Plex Mono',monospace; letter-spacing:.08em; }
+  .band-num{ font-family:'IBM Plex Mono',monospace; font-variant-numeric: tabular-nums; }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+  }
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .meter-track{ background: repeating-linear-gradient(90deg, #E7E3D6 0 1px, transparent 1px 100%); background-size: calc(100%/11) 100%; }
+  ::selection{ background:#ECB93A; color:#0A0A45; }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:3px solid #ECB93A; outline-offset:2px; border-radius:4px;
+  }
+  .grain{ background-image: radial-gradient(#0000000d 1px, transparent 1px); background-size: 18px 18px; }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+<!-- Skip link -->
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-navy focus:text-white focus:px-4 focus:py-2 focus:rounded-md z-[100]">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-paper/90 backdrop-blur border-b border-transparent">
+  <nav class="max-w-7xl mx-auto px-5 md:px-8 h-20 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-2">
+      <img src="logo.png" alt="Fluency Education" class="h-9 md:h-10 w-auto">
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-inksoft">
+      <a href="#program" class="hover:text-navy transition-colors">Program</a>
+      <a href="#pricing" class="hover:text-navy transition-colors">Classes &amp; Pricing</a>
+      <a href="#books" class="hover:text-navy transition-colors">Study Guides</a>
+      <a href="#book-assessment" class="hover:text-navy transition-colors">Book a Session</a>
+      <a href="#faq" class="hover:text-navy transition-colors">FAQ</a>
+      <a href="#contact" class="hover:text-navy transition-colors">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="#book-assessment" class="hidden sm:inline-flex items-center gap-2 bg-navy text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-navydark transition-colors shadow-sm">
+        Book Free Assessment
+      </a>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false" class="lg:hidden w-10 h-10 grid place-items-center rounded-full border border-line">
+        <svg id="menu-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M2 5h16M2 10h16M2 15h16" stroke="#14142B" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="lg:hidden hidden bg-paper border-t border-line px-5 py-4 flex flex-col gap-4 text-sm font-semibold text-inksoft">
+    <a href="#program">Program</a>
+    <a href="#pricing">Classes &amp; Pricing</a>
+    <a href="#books">Study Guides</a>
+    <a href="#book-assessment">Book a Session</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#book-assessment" class="bg-navy text-white text-center px-5 py-2.5 rounded-full">Book Free Assessment</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="relative pt-36 pb-20 md:pt-48 md:pb-28 overflow-hidden">
+  <div class="absolute -top-24 -right-40 w-[560px] h-[560px] rounded-full bg-gold/20 blur-3xl"></div>
+  <div class="absolute top-40 -left-32 w-[420px] h-[420px] rounded-full bg-navy/10 blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-14 items-center relative">
+    <div class="reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-5">CELPIP COACHING · RICHMOND, BC</p>
+      <h1 class="font-display font-semibold text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-[3.6rem] text-navydark">
+        Speak with the score that opens your Canada.
+      </h1>
+      <p class="mt-6 text-lg text-inksoft max-w-xl leading-relaxed">
+        Fluency Education helps immigrants across Canada move their CELPIP band scores from "good enough" to "done" — through one-on-one coaching, small group classes, and honest feedback on every skill the test measures.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#book-assessment" class="inline-flex items-center gap-2 bg-navy text-white font-semibold px-7 py-3.5 rounded-full hover:bg-navydark hover:-translate-y-0.5 transition-all shadow-md shadow-navy/20">
+          Book your free assessment
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#pricing" class="inline-flex items-center gap-2 border-2 border-navy text-navy font-semibold px-7 py-3.5 rounded-full hover:bg-navy hover:text-white transition-colors">
+          See class pricing
+        </a>
+      </div>
+
+      <div class="mt-10 flex items-center gap-6 text-sm text-inksoft">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-gold"></span> Listening · Reading · Writing · Speaking
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature element: Band Score meter -->
+    <div class="reveal">
+      <div class="bg-white border border-line rounded-3xl shadow-xl shadow-navy/5 p-7 md:p-8">
+        <p class="eyebrow text-xs text-inksoft mb-1">YOUR CELPIP BAND JOURNEY</p>
+        <div class="flex items-end justify-between mb-4">
+          <div>
+            <span class="band-num text-5xl font-semibold text-navydark" id="band-counter">5</span>
+            <span class="band-num text-lg text-inksoft"> → </span>
+            <span class="band-num text-5xl font-semibold text-gold" id="band-target">9</span>
+          </div>
+          <span class="text-xs text-inksoft text-right leading-tight">Typical coaching<br>range, Speaking</span>
+        </div>
+        <div class="relative h-2.5 rounded-full meter-track overflow-hidden bg-line/60">
+          <div id="band-fill" class="absolute inset-y-0 left-0 bg-gradient-to-r from-navy to-gold rounded-full transition-all duration-[1400ms] ease-out" style="width:0%"></div>
+        </div>
+        <div class="flex justify-between mt-2 band-num text-[11px] text-inksoft">
+          <span>1</span><span>4</span><span>8</span><span>12</span>
+        </div>
+
+        <div class="mt-7 grid grid-cols-2 gap-3">
+          <div class="border border-line rounded-xl p-4">
+            <p class="band-num text-2xl text-navydark font-semibold">4</p>
+            <p class="text-xs text-inksoft mt-1">Skills assessed each session</p>
+          </div>
+          <div class="border border-line rounded-xl p-4">
+            <p class="band-num text-2xl text-navydark font-semibold">1:1</p>
+            <p class="text-xs text-inksoft mt-1">Or small group, your choice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="border-y border-line bg-white">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-6 flex flex-wrap items-center justify-center gap-x-12 gap-y-3 text-sm text-inksoft">
+    <span class="font-semibold text-navydark">Coaching built around IRCC-recognized CELPIP General &amp; General LS</span>
+    <span class="hidden md:inline text-line">|</span>
+    <span>Instructor-led, not pre-recorded</span>
+    <span class="hidden md:inline text-line">|</span>
+    <span>Serving Metro Vancouver &amp; online across Canada</span>
+  </div>
+</section>
+
+<!-- ================= PROGRAM / HOW IT WORKS ================= -->
+<section id="program" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-4">THE PROGRAM</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-navydark">Four skills, one clear path to test day.</h2>
+      <p class="mt-4 text-inksoft leading-relaxed">Every learner starts with a real assessment, not a guess. From there, your plan targets exactly the bands you need — for PR, citizenship, or a professional license.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-4 gap-6">
+      <div class="reveal border border-line bg-white rounded-2xl p-6 hover:shadow-lg hover:shadow-navy/5 hover:-translate-y-1 transition-all">
+        <span class="band-num text-sm text-gold font-semibold">01</span>
+        <h3 class="font-display font-semibold text-lg mt-3 text-navydark">Assess</h3>
+        <p class="text-sm text-inksoft mt-2 leading-relaxed">A full mock across Listening, Reading, Writing and Speaking to find your real starting band.</p>
+      </div>
+      <div class="reveal border border-line bg-white rounded-2xl p-6 hover:shadow-lg hover:shadow-navy/5 hover:-translate-y-1 transition-all">
+        <span class="band-num text-sm text-gold font-semibold">02</span>
+        <h3 class="font-display font-semibold text-lg mt-3 text-navydark">Plan</h3>
+        <p class="text-sm text-inksoft mt-2 leading-relaxed">A study plan built around your target score, your timeline, and the skills that need the most work.</p>
+      </div>
+      <div class="reveal border border-line bg-white rounded-2xl p-6 hover:shadow-lg hover:shadow-navy/5 hover:-translate-y-1 transition-all">
+        <span class="band-num text-sm text-gold font-semibold">03</span>
+        <h3 class="font-display font-semibold text-lg mt-3 text-navydark">Practice</h3>
+        <p class="text-sm text-inksoft mt-2 leading-relaxed">Weekly 1-on-1 or group sessions with live speaking practice and marked writing feedback.</p>
+      </div>
+      <div class="reveal border border-line bg-white rounded-2xl p-6 hover:shadow-lg hover:shadow-navy/5 hover:-translate-y-1 transition-all">
+        <span class="band-num text-sm text-gold font-semibold">04</span>
+        <h3 class="font-display font-semibold text-lg mt-3 text-navydark">Test-ready</h3>
+        <p class="text-sm text-inksoft mt-2 leading-relaxed">A final mock test under real exam timing, so test day itself holds no surprises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing" class="py-24 md:py-32 bg-navydark relative overflow-hidden">
+  <div class="absolute inset-0 grain opacity-[0.06]"></div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative">
+    <div class="max-w-2xl reveal">
+      <p class="eyebrow text-xs text-gold font-semibold mb-4">CLASSES &amp; PRICING</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-white">Choose the coaching style that fits you.</h2>
+      <p class="mt-4 text-white/70 leading-relaxed">Every plan starts with a free 20-minute assessment call — no commitment required.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 gap-6">
+      <!-- 1-on-1 -->
+      <div class="reveal bg-paper rounded-3xl p-8 md:p-10 flex flex-col">
+        <p class="eyebrow text-xs text-golddeep font-semibold">ONE-ON-ONE COACHING</p>
+        <h3 class="font-display font-semibold text-2xl text-navydark mt-2">Private Sessions</h3>
+        <div class="mt-5 flex items-baseline gap-1">
+          <span class="band-num text-4xl font-semibold text-navydark">$65</span>
+          <span class="text-inksoft text-sm">CAD / 60-min session</span>
+        </div>
+        <p class="text-xs text-inksoft mt-1">Illustrative rate — update with your actual pricing.</p>
+        <ul class="mt-7 space-y-3 text-sm text-inksoft flex-1">
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Fully personalized to your target band</li>
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Flexible scheduling, in-person or online</li>
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Written feedback on every essay/email task</li>
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Recorded speaking practice with corrections</li>
+        </ul>
+        <a href="#book-assessment" class="mt-8 inline-flex justify-center items-center gap-2 bg-navy text-white font-semibold px-6 py-3 rounded-full hover:bg-navydark transition-colors">Book a private session</a>
+      </div>
+
+      <!-- Group -->
+      <div class="reveal bg-paper rounded-3xl p-8 md:p-10 flex flex-col ring-2 ring-gold relative">
+        <span class="absolute -top-3 right-8 bg-gold text-navydark text-xs font-bold px-3 py-1 rounded-full">MOST POPULAR</span>
+        <p class="eyebrow text-xs text-golddeep font-semibold">GROUP CLASSES</p>
+        <h3 class="font-display font-semibold text-2xl text-navydark mt-2">Small Group Program</h3>
+        <div class="mt-5 flex items-baseline gap-1">
+          <span class="band-num text-4xl font-semibold text-navydark">$25</span>
+          <span class="text-inksoft text-sm">CAD / session (max 6 students)</span>
+        </div>
+        <p class="text-xs text-inksoft mt-1">Illustrative rate — update with your actual pricing.</p>
+        <ul class="mt-7 space-y-3 text-sm text-inksoft flex-1">
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Weekly live classes, all four skills</li>
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Peer speaking practice in a small cohort</li>
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Monthly full-length mock test</li>
+          <li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="#0505B1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Most affordable way to reach your target band</li>
+        </ul>
+        <a href="#book-assessment" class="mt-8 inline-flex justify-center items-center gap-2 bg-gold text-navydark font-semibold px-6 py-3 rounded-full hover:bg-golddeep hover:text-white transition-colors">Join a group class</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STUDY GUIDES / PRODUCTS ================= -->
+<section id="books" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-4">STUDY GUIDES</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-navydark">Practice on your own time.</h2>
+      <p class="mt-4 text-inksoft leading-relaxed">Printable reviewer guides written for CELPIP, with sample prompts, model answers, and a full practice test. Pay by card or PayPal.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="reveal border border-line bg-white rounded-2xl overflow-hidden flex flex-col hover:shadow-lg hover:shadow-navy/5 transition-shadow">
+        <div class="aspect-[4/3] bg-gradient-to-br from-navy to-navydark flex items-center justify-center">
+          <span class="font-display text-white text-center px-6 text-lg font-semibold leading-snug">Complete CELPIP<br>Reviewer Guide</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-display font-semibold text-lg text-navydark">Complete Reviewer Guide</h3>
+          <p class="text-sm text-inksoft mt-2 flex-1">All four skills, strategy notes, and 2 full practice tests with answer keys. PDF download.</p>
+          <div class="mt-5 flex items-center justify-between">
+            <span class="band-num text-xl font-semibold text-navydark">$29 CAD</span>
+          </div>
+          <div class="product-buy mt-4" data-product="Complete Reviewer Guide" data-price="29.00"></div>
+        </div>
+      </div>
+
+      <div class="reveal border border-line bg-white rounded-2xl overflow-hidden flex flex-col hover:shadow-lg hover:shadow-navy/5 transition-shadow">
+        <div class="aspect-[4/3] bg-gradient-to-br from-gold to-golddeep flex items-center justify-center">
+          <span class="font-display text-navydark text-center px-6 text-lg font-semibold leading-snug">Writing &amp; Speaking<br>Sample Bank</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-display font-semibold text-lg text-navydark">Writing &amp; Speaking Sample Bank</h3>
+          <p class="text-sm text-inksoft mt-2 flex-1">40+ model email/essay responses and speaking scripts scored by task.</p>
+          <div class="mt-5 flex items-center justify-between">
+            <span class="band-num text-xl font-semibold text-navydark">$19 CAD</span>
+          </div>
+          <div class="product-buy mt-4" data-product="Writing &amp; Speaking Sample Bank" data-price="19.00"></div>
+        </div>
+      </div>
+
+      <div class="reveal border border-line bg-white rounded-2xl overflow-hidden flex flex-col hover:shadow-lg hover:shadow-navy/5 transition-shadow">
+        <div class="aspect-[4/3] bg-gradient-to-br from-navydark to-navy flex items-center justify-center">
+          <span class="font-display text-white text-center px-6 text-lg font-semibold leading-snug">Listening &amp; Reading<br>Practice Set</span>
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <h3 class="font-display font-semibold text-lg text-navydark">Listening &amp; Reading Practice Set</h3>
+          <p class="text-sm text-inksoft mt-2 flex-1">Timed practice sets with audio scripts and answer explanations.</p>
+          <div class="mt-5 flex items-center justify-between">
+            <span class="band-num text-xl font-semibold text-navydark">$19 CAD</span>
+          </div>
+          <div class="product-buy mt-4" data-product="Listening &amp; Reading Practice Set" data-price="19.00"></div>
+        </div>
+      </div>
+
+    </div>
+    <p class="text-xs text-inksoft mt-6">Card and PayPal checkout activate once your PayPal Client ID is added — see the included setup guide.</p>
+  </div>
+</section>
+
+<!-- ================= BOOK ASSESSMENT ================= -->
+<section id="book-assessment" class="py-24 md:py-32 bg-white border-y border-line">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-start">
+    <div class="reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-4">BOOK A SESSION</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-navydark">Start with a free assessment.</h2>
+      <p class="mt-4 text-inksoft leading-relaxed max-w-md">20 minutes, no cost. We'll test your current level across all four skills and recommend a plan — private or group.</p>
+
+      <div class="mt-8 space-y-4 text-sm">
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0 mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 4v4l2.5 2.5" stroke="#0505B1" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="6.5" stroke="#0505B1" stroke-width="1.3"/></svg>
+          </div>
+          <p class="text-inksoft">Choose a time that works for you below, or send an inquiry and we'll follow up within 1 business day.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal border border-line rounded-3xl overflow-hidden bg-paper">
+      <!-- Calendly embed placeholder: replace YOUR-CALENDLY-USERNAME below once your Calendly account is set up -->
+      <div class="p-6 border-b border-line bg-navydark text-white">
+        <p class="eyebrow text-xs text-gold font-semibold">LIVE CALENDAR</p>
+        <p class="text-sm text-white/70 mt-1">Connect your Calendly link in the code to show live availability here.</p>
+      </div>
+      <div id="calendly-slot" class="min-h-[420px] grid place-items-center p-8 text-center">
+        <div>
+          <p class="text-inksoft text-sm mb-4">Calendar booking isn't connected yet.</p>
+          <a href="#contact" class="inline-flex items-center gap-2 bg-navy text-white font-semibold px-6 py-3 rounded-full hover:bg-navydark transition-colors">Request a time via the form below</a>
+        </div>
+      </div>
+      <!--
+        To activate live booking:
+        1. Create a free Calendly account and an "Assessment Call" event type.
+        2. Replace the div above with:
+           <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-USERNAME/assessment" style="min-width:100%;height:650px;"></div>
+           <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-4">STUDENT RESULTS</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-navydark">Sample testimonials — replace with your students' words.</h2>
+    </div>
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <div class="reveal border border-line bg-white rounded-2xl p-7">
+        <p class="text-gold mb-3">★★★★★</p>
+        <p class="text-inksoft text-sm leading-relaxed">"[Sample] Replace this space with a real quote from a student about their band score improvement and experience."</p>
+        <p class="mt-4 text-sm font-semibold text-navydark">— Student name, target program</p>
+      </div>
+      <div class="reveal border border-line bg-white rounded-2xl p-7">
+        <p class="text-gold mb-3">★★★★★</p>
+        <p class="text-inksoft text-sm leading-relaxed">"[Sample] Replace this space with a real quote focused on speaking or writing feedback quality."</p>
+        <p class="mt-4 text-sm font-semibold text-navydark">— Student name, target program</p>
+      </div>
+      <div class="reveal border border-line bg-white rounded-2xl p-7">
+        <p class="text-gold mb-3">★★★★★</p>
+        <p class="text-inksoft text-sm leading-relaxed">"[Sample] Replace this space with a real quote about scheduling flexibility or group class experience."</p>
+        <p class="mt-4 text-sm font-semibold text-navydark">— Student name, target program</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="py-24 md:py-32 bg-white border-y border-line">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[0.8fr_1.2fr] gap-14">
+    <div class="reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-4">FAQ</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-navydark">Questions, answered.</h2>
+      <p class="mt-4 text-inksoft leading-relaxed">Can't find what you're looking for? <a href="#contact" class="text-navy font-semibold underline">Send us a message</a>.</p>
+    </div>
+    <div class="reveal divide-y divide-line border-t border-b border-line" id="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn w-full flex items-center justify-between text-left py-5 font-display font-semibold text-navydark" aria-expanded="false">
+          What's the difference between CELPIP General and General LS?
+          <span class="faq-icon shrink-0 ml-4 transition-transform">＋</span>
+        </button>
+        <div class="faq-panel hidden pb-5 text-sm text-inksoft leading-relaxed">CELPIP General is used for permanent residency and citizenship applications and tests all four skills. CELPIP General LS covers only Listening and Speaking and is used for citizenship. We coach for both.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn w-full flex items-center justify-between text-left py-5 font-display font-semibold text-navydark" aria-expanded="false">
+          How many sessions until I see a band improvement?
+          <span class="faq-icon shrink-0 ml-4 transition-transform">＋</span>
+        </button>
+        <div class="faq-panel hidden pb-5 text-sm text-inksoft leading-relaxed">It depends on your starting level and target band. Your free assessment includes a realistic timeline based on your current scores.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn w-full flex items-center justify-between text-left py-5 font-display font-semibold text-navydark" aria-expanded="false">
+          Do you teach online or in person?
+          <span class="faq-icon shrink-0 ml-4 transition-transform">＋</span>
+        </button>
+        <div class="faq-panel hidden pb-5 text-sm text-inksoft leading-relaxed">Both. In-person sessions are based in Richmond, BC; online sessions are available for students anywhere in Canada.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn w-full flex items-center justify-between text-left py-5 font-display font-semibold text-navydark" aria-expanded="false">
+          What payment methods do you accept?
+          <span class="faq-icon shrink-0 ml-4 transition-transform">＋</span>
+        </button>
+        <div class="faq-panel hidden pb-5 text-sm text-inksoft leading-relaxed">Credit/debit card and PayPal for study guides. Class packages can be arranged directly after your assessment call.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWSLETTER / CTA ================= -->
+<section class="py-20 bg-gradient-to-br from-navy to-navydark">
+  <div class="max-w-4xl mx-auto px-5 md:px-8 text-center reveal">
+    <h2 class="font-display font-semibold text-2xl md:text-3xl text-white">Study tips, exam updates, and the occasional deadline reminder.</h2>
+    <form id="newsletter-form" class="mt-8 flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto" action="https://formsubmit.co/joni@fluencyeducation.ca" method="POST">
+      <input type="hidden" name="_subject" value="New newsletter signup — Fluency Education">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="newsletter-email" class="sr-only">Email address</label>
+      <input id="newsletter-email" type="email" name="email" required placeholder="you@email.com" class="flex-1 rounded-full px-5 py-3 text-ink placeholder:text-inksoft/60 focus:outline-none">
+      <button type="submit" class="bg-gold text-navydark font-semibold px-6 py-3 rounded-full hover:bg-golddeep hover:text-white transition-colors">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 md:py-32">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14">
+    <div class="reveal">
+      <p class="eyebrow text-xs text-golddeep font-semibold mb-4">GET IN TOUCH</p>
+      <h2 class="font-display font-semibold text-3xl md:text-4xl text-navydark">Send us your questions.</h2>
+      <p class="mt-4 text-inksoft leading-relaxed max-w-md">Messages go straight to our inbox — we typically reply within one business day.</p>
+
+      <div class="mt-9 space-y-5 text-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M2 3h11v9H2z" stroke="#0505B1" stroke-width="1.3"/><path d="M2 3.5l5.5 4L13 3.5" stroke="#0505B1" stroke-width="1.3"/></svg></div>
+          <a href="mailto:joni@fluencyeducation.ca" class="text-inksoft hover:text-navy font-medium">joni@fluencyeducation.ca</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M3 2.5c1 1 1.6 2.2 1.8 3.3-.5.5-1.2 1-1.2 1.7 0 1.6 2.5 4.1 4.1 4.1.7 0 1.2-.7 1.7-1.2 1.1.2 2.3.8 3.3 1.8-1 2-3 2.5-4.2 2.3-3-.6-6.4-4-7-7-.2-1.2.3-3.2 2.3-4.2z" stroke="#0505B1" stroke-width="1.1" stroke-linejoin="round"/></svg></div>
+          <a href="tel:+17788964013" class="text-inksoft hover:text-navy font-medium">+1 (778) 896-4013</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 13.5S12 9.2 12 6a4.5 4.5 0 10-9 0c0 3.2 4.5 7.5 4.5 7.5z" stroke="#0505B1" stroke-width="1.2"/><circle cx="7.5" cy="6" r="1.6" stroke="#0505B1" stroke-width="1.1"/></svg></div>
+          <span class="text-inksoft font-medium">111-7700 St Albans Rd, Richmond, BC V6Y 3Y4</span>
+        </div>
+      </div>
+    </div>
+
+    <form id="contact-form" class="reveal bg-white border border-line rounded-3xl p-7 md:p-9 space-y-5" action="https://formsubmit.co/joni@fluencyeducation.ca" method="POST">
+      <input type="hidden" name="_subject" value="New inquiry — Fluency Education website">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="#contact">
+      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="cf-name" class="block text-xs font-semibold text-inksoft mb-2">Full name</label>
+          <input id="cf-name" name="name" type="text" required class="w-full border border-line rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-navy">
+        </div>
+        <div>
+          <label for="cf-email" class="block text-xs font-semibold text-inksoft mb-2">Email</label>
+          <input id="cf-email" name="email" type="email" required class="w-full border border-line rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-navy">
+        </div>
+      </div>
+      <div>
+        <label for="cf-interest" class="block text-xs font-semibold text-inksoft mb-2">I'm interested in</label>
+        <select id="cf-interest" name="interest" class="w-full border border-line rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-navy">
+          <option>Free assessment</option>
+          <option>One-on-one coaching</option>
+          <option>Group classes</option>
+          <option>Study guides</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div>
+        <label for="cf-message" class="block text-xs font-semibold text-inksoft mb-2">Message</label>
+        <textarea id="cf-message" name="message" rows="4" required class="w-full border border-line rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-navy"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-navy text-white font-semibold py-3.5 rounded-full hover:bg-navydark transition-colors">Send inquiry</button>
+      <p class="text-xs text-inksoft text-center">First submission from this form will ask you to confirm your email with FormSubmit — that's normal, one-time setup.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-navydark text-white/80">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-16 grid md:grid-cols-4 gap-10">
+    <div>
+      <img src="logo.png" alt="Fluency Education" class="h-9 w-auto brightness-0 invert opacity-90">
+      <p class="text-sm mt-4 leading-relaxed max-w-xs">Proficiency that unlocks endless possibilities. CELPIP coaching for Canadian immigrants.</p>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-4 text-sm">Explore</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#program" class="hover:text-gold">Program</a></li>
+        <li><a href="#pricing" class="hover:text-gold">Classes &amp; Pricing</a></li>
+        <li><a href="#books" class="hover:text-gold">Study Guides</a></li>
+        <li><a href="#faq" class="hover:text-gold">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-4 text-sm">Company</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#contact" class="hover:text-gold">Contact</a></li>
+        <li><a href="privacy.html" class="hover:text-gold">Privacy Policy</a></li>
+        <li><a href="terms.html" class="hover:text-gold">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-display font-semibold text-white mb-4 text-sm">Contact</p>
+      <ul class="space-y-2 text-sm">
+        <li>joni@fluencyeducation.ca</li>
+        <li>+1 (778) 896-4013</li>
+        <li>111-7700 St Albans Rd, Richmond, BC V6Y 3Y4</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 text-center text-xs text-white/50">
+    © <span id="year"></span> Fluency Education. All rights reserved.
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top" class="fixed bottom-6 right-6 w-11 h-11 rounded-full bg-navy text-white shadow-lg grid place-items-center opacity-0 pointer-events-none transition-opacity">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M3 7l5-5 5 5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// mobile menu
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('hidden');
+  menuBtn.setAttribute('aria-expanded', String(!open));
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+// sticky nav shadow
+const nav = document.getElementById('site-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('shadow-md', window.scrollY > 8);
+  nav.classList.toggle('border-line', window.scrollY > 8);
+  const btt = document.getElementById('back-to-top');
+  if (window.scrollY > 600) { btt.classList.remove('opacity-0','pointer-events-none'); }
+  else { btt.classList.add('opacity-0','pointer-events-none'); }
+});
+document.getElementById('back-to-top').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+// reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// band score counter animation
+const counterEl = document.getElementById('band-counter');
+const fillEl = document.getElementById('band-fill');
+let counted = false;
+const counterIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !counted) {
+      counted = true;
+      fillEl.style.width = (5/12*100) + '%';
+      setTimeout(() => { fillEl.style.width = (9/12*100) + '%'; }, 900);
+    }
+  });
+}, { threshold: 0.4 });
+counterIO.observe(counterEl);
+
+// FAQ accordion
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = !panel.classList.contains('hidden');
+    document.querySelectorAll('.faq-panel').forEach(p => p.classList.add('hidden'));
+    document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+    document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded','false'));
+    if (!isOpen) {
+      panel.classList.remove('hidden');
+      icon.style.transform = 'rotate(45deg)';
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
+/* =========================================================
+   PAYPAL CHECKOUT (card + PayPal)
+   1. Get a Client ID from https://developer.paypal.com/dashboard/applications
+   2. Replace YOUR_PAYPAL_CLIENT_ID below.
+   3. That's it — the SDK button below accepts both PayPal balance
+      and debit/credit card checkout automatically.
+   ========================================================= */
+const PAYPAL_CLIENT_ID = "YOUR_PAYPAL_CLIENT_ID";
+
+function renderBuyButtons() {
+  const containers = document.querySelectorAll('.product-buy');
+  if (PAYPAL_CLIENT_ID === "YOUR_PAYPAL_CLIENT_ID") {
+    containers.forEach(c => {
+      const name = c.dataset.product;
+      c.innerHTML = `<a href="#contact" class="inline-flex w-full justify-center items-center gap-2 border-2 border-navy text-navy font-semibold px-5 py-2.5 rounded-full hover:bg-navy hover:text-white transition-colors text-sm" onclick="document.getElementById('cf-message').value='I would like to order: ${name}';document.getElementById('cf-interest').value='Study guides';">Order via contact form</a>`;
+    });
+    return;
+  }
+  const script = document.createElement('script');
+  script.src = `https://www.paypal.com/sdk/js?client-id=${PAYPAL_CLIENT_ID}&currency=CAD&components=buttons`;
+  script.onload = () => {
+    containers.forEach(c => {
+      const price = c.dataset.price;
+      const name = c.dataset.product;
+      paypal.Buttons({
+        style: { layout: 'horizontal', color: 'blue', shape: 'pill', label: 'pay', height: 40 },
+        createOrder: (data, actions) => actions.order.create({
+          purchase_units: [{ description: name, amount: { value: price, currency_code: 'CAD' } }]
+        }),
+        onApprove: (data, actions) => actions.order.capture().then(() => alert('Thank you! Your order for "' + name + '" is confirmed.')),
+      }).render(c);
+    });
+  };
+  document.body.appendChild(script);
+}
+renderBuyButtons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | Fluency Education</title>
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>tailwind = { config: { theme: { extend: {
+  colors: { navy:'#0505B1', navydark:'#0A0A45', gold:'#ECB93A', paper:'#FAF9F4', ink:'#14142B', inksoft:'#55566B', line:'#E7E3D6' },
+  fontFamily: { display:['"Space Grotesk"','sans-serif'], body:['Inter','sans-serif'] }
+}}}}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-body bg-paper text-ink">
+<header class="border-b border-line">
+  <div class="max-w-4xl mx-auto px-5 py-6 flex items-center justify-between">
+    <a href="index.html"><img src="logo.png" alt="Fluency Education" class="h-9"></a>
+    <a href="index.html" class="text-sm font-semibold text-navy hover:underline">← Back to site</a>
+  </div>
+</header>
+<main class="max-w-3xl mx-auto px-5 py-16">
+  <p class="text-xs font-semibold text-golddeep mb-3 tracking-wide">LEGAL</p>
+  <h1 class="font-display font-bold text-4xl text-navydark mb-3">Terms of Service</h1>
+  <p class="text-sm text-inksoft mb-10">Last updated: [Add date]. This is a starting template — have it reviewed by a lawyer before publishing.</p>
+
+  <div class="space-y-8 text-inksoft leading-relaxed">
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Services</h2>
+      <p>Fluency Education provides CELPIP exam coaching, including one-on-one and group classes, and sells downloadable study guides. Coaching does not guarantee a specific test score; results depend on individual effort and starting level.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Bookings and cancellations</h2>
+      <p>[Add your cancellation and rescheduling policy — e.g. how much notice is required, and whether late cancellations are charged.]</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Payments</h2>
+      <p>Class packages and study guides are paid by credit/debit card or PayPal. All prices are listed in Canadian dollars (CAD). [Add your refund policy here.]</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Digital products</h2>
+      <p>Study guides are for personal use only and may not be resold, redistributed, or shared publicly.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Limitation of liability</h2>
+      <p>Fluency Education is not affiliated with, and does not represent, IRCC or the official CELPIP test administrator (Paragon Testing Enterprises). We are an independent tutoring service.</p>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-xl text-navydark mb-2">Contact</h2>
+      <p>Fluency Education, 111-7700 St Albans Rd, Richmond, BC V6Y 3Y4 · joni@fluencyeducation.ca · +1 (778) 896-4013</p>
+    </section>
+  </div>
+</main>
+<footer class="border-t border-line py-8 text-center text-xs text-inksoft">© <span id="year"></span> Fluency Education. All rights reserved.</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
